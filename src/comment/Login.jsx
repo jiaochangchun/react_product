@@ -8,13 +8,13 @@ class Login extends React.Component{
           <div className = 'login_head'>登录</div>
           <div className = 'login_form'>
               <Form >
-                  <Form.Field>
-                  <Input type="text" icon = 'user' iconPosition = 'left' placeholder="请输入用户名..."/>
-                  </Form.Field>
-                  <Form.Field>
-                  <Input type="text" icon = 'lock' iconPosition= 'left' placeholder="请输入密码..."/>
-                  </Form.Field>
-                <Button type='submit' positive fluid>登录</Button>
+                <div className="ui big field fluid input">
+                  <Input type="text" icon= 'user' iconPosition = 'left' placeholder="请输入用户名..."/>
+                </div>
+                <div className="ui big field fluid input">
+                  <Input type="text" icon= 'lock' iconPosition = 'left' placeholder="请输入密码..."/>
+                </div>
+                <Button type='submit' className='positive big fluid ui button' >登录</Button>
               </Form>
           </div>
       </div>
